@@ -1,0 +1,99 @@
+/* Define o estilo base para todos os elementos */
+* {
+    box-sizing: border-box; /* Inclui as bordas e o padding nas dimensões totais do elemento */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    color: white; /* Define a cor do texto como branca */
+}
+
+/* Estilos para o corpo da página */
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%); /* Aplica um gradiente ao fundo */
+    height: 100vh; /* Define a altura do body para 100% da altura da janela */
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    align-items: center; /* Centraliza verticalmente os itens dentro do body */
+    justify-content: center; /* Centraliza horizontalmente os itens dentro do body */
+}
+
+/* Estilos para o pseudoelemento antes do body */
+body::before {
+    background-image: url("img/code.png"); /* Define uma imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: right; /* Posiciona a imagem à direita */
+    content: ""; /* Cria um elemento sem conteúdo visível */
+    display: block; /* Exibe o pseudoelemento como um bloco */
+    position: absolute; /* Posiciona o pseudoelemento de forma absoluta */
+    width: 100%; /* Define a largura como 100% do body */
+    height: 100%; /* Define a altura como 100% do body */
+    opacity: 0.4; /* Define a opacidade da imagem para 40% */
+}
+
+/* Estilos para o container principal */
+.container {
+    width: 1200px; /* Define a largura do container */
+    height: 600px; /* Define a altura do container */
+    display: flex; /* Usa flexbox para organizar os itens dentro do container */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    border-radius: 24px; /* Arredonda os cantos do container */
+    border: 1px solid #1875E8; /* Adiciona uma borda azul ao redor do container */
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15); /* Adiciona uma sombra ao redor do container */
+    background-image: url("img/Ruido.png"); /* Define uma imagem de fundo */
+    background-size: 100% 100%; /* Redimensiona a imagem para cobrir o container */
+    position: relative; /* Define o posicionamento relativo para elementos filhos absolutos */
+}
+
+/* Estilos para o conteúdo do container */
+.container__conteudo {
+    display: flex; /* Usa flexbox para organizar os itens dentro */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    position: absolute; /* Posiciona o elemento de forma absoluta dentro do container */
+    bottom: 0; /* Posiciona o elemento na parte inferior */
+}
+
+/* Estilos para a área de informações do container */
+.container__informacoes {
+    flex: 1; /* O elemento ocupa o máximo de espaço disponível */
+    padding: 20px; /* Adiciona 20px de padding ao redor */
+}
+
+/* Estilos para o botão dentro do container */
+.container__botao {
+    border-radius: 16px; /* Arredonda os cantos do botão */
+    background: #1875E8; /* Define o fundo do botão como azul */
+    padding: 16px 24px; /* Adiciona espaçamento interno no botão */
+    width: 100%; /* O botão ocupa toda a largura disponível */
+    font-size: 24px; /* Define o tamanho da fonte do botão */
+    font-weight: 700; /* Define a espessura da fonte do botão como negrito */
+    border: none; /* Remove a borda padrão do botão */
+    margin-top: 16px; /* Adiciona uma margem superior de 16px */
+}
+
+/* Estilos para o texto do container */
+.container__texto {
+    margin: 16px 0 16px 0; /* Define margens superior e inferior de 16px */
+}
+
+/* Estilos para o texto azul do container */
+.container__texto-azul {
+    color: #1875E8; /* Define a cor do texto como azul */
+}
+
+/* Estilos para o título principal (h1) */
+h1 {
+    font-family: 'Chakra Petch', sans-serif; /* Define a fonte do título como 'Chakra Petch' */
+    font-size: 72px; /* Define o tamanho da fonte do título */
+}
+
+/* Estilos para os subtítulos, parágrafos e botões */
+h2,
+p,
+button {
+    font-family: 'Inter', sans-serif; /* Define a fonte como 'Inter' para esses elementos */
+}
+
+/* Estilos específicos para o subtítulo (h2) */
+h2 {
+    font-size: 32px; /* Define o tamanho da fonte do subtítulo */
+    font-weight: 400; /* Define a espessura da fonte como normal */
+}
